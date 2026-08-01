@@ -98,13 +98,9 @@ module.exports = { compressGR, BitWriter }; //compressGR ve BitWriter'ı dışa 
 
 const crypto = require('crypto');
 
-
-
-async function main() {
-    return await crypto.createHash('shake256', { outputLength: 32 }) // byte cinsinden çıktı uzunluğu
+ var a = crypto.createHash('shake256', { outputLength: 32 }) // byte cinsinden çıktı uzunluğu
     .update('merhaba dünya')
     .digest('hex');
-}
-console.log(main());
 
 
+console.log(a.toString());
