@@ -290,6 +290,6 @@ function scalarMulPoly(scalar, poly) {
 
 function mod(a, n) {
   return ((a % n) + n) % n;
-}
+} 
 
 module.exports = { hawkVerify }; 

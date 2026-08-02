@@ -1,0 +1,22 @@
+{
+  "name": "hawk-new",
+  "version": "1.0.0",
+  "description": "implementation hawk into cryptos",
+  "main": "golomb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpertayfun/hawk-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alpertayfun/hawk-new/issues"
+  },
+  "homepage": "https://github.com/alpertayfun/hawk-new#readme",
+  "dependencies": {
+    "ethers": "^6.17.0"
+  }
+}
