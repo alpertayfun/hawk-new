@@ -34,7 +34,7 @@ const RPC_URLS = [
 ];
 
 // Kaç adet son işlemi göstermek istediğiniz (bloktan)
-const TX_LIMIT = 10;
+const TX_LIMIT = 150;
 
 // --------------------------------------------------------------------------
 
@@ -109,7 +109,7 @@ async function main() {
   const txs = block.transactions.slice(0, TX_LIMIT);
 
   txs.forEach((tx, i) => {
-    console.log(tx);
+    console.log("https://etherscan.io/tx/"+tx);
   });
   // txs.forEach((tx, i) => {
   //   // tx bir object (getBlock ile prefetch:true kullandık)
