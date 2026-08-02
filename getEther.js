@@ -106,6 +106,11 @@ async function main() {
 
   // const txs = block.transactions.slice(0, TX_LIMIT);
 
+  const txs = block.transactions.slice(0, TX_LIMIT);
+
+  txs.forEach((tx, i) => {
+    console.log(tx);
+  });
   // txs.forEach((tx, i) => {
   //   // tx bir object (getBlock ile prefetch:true kullandık)
   //   console.log(`\n--- İşlem ${i + 1} ---`);
@@ -119,7 +124,7 @@ async function main() {
   //   }
   //   console.log(`Nonce: ${tx.nonce}`);
   // });
-  
+
 }
 
 main().catch((err) => {
